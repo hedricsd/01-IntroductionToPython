@@ -29,7 +29,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -48,7 +48,7 @@ import rosegraphics as rg
 
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   Run this module.  A window will pop up and Turtles will move around.
 #   After the Turtles stop moving,
 #      ** click anywhere in the window to close the window **.
@@ -98,6 +98,8 @@ boris.forward(100)
 boris.left(90)
 boris.forward(200)
 
+boris.pen = rg.Pen('orange', 15)
+boris.go_to(rg.Point(-100, 200))
 # -----------------------------------------------------------------------------
 # The next few lines show how to:
 #   - Construct a second SimpleTurtle,
@@ -116,7 +118,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -129,7 +131,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   The above code  CONSTRUCTS  two SimpleTurtle objects
 #   and gives those objects NAMES:
 #       boris    natasha
@@ -153,10 +155,19 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
+sam = rg.SimpleTurtle('circle')
+sam.left(45)
+sam.forward(100)
+sam.right(90)
+sam.backward(50)
+sam.pen = rg.Pen('purple', 5)
+sam.left(75)
+sam.forward(30)
+sam.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   Ensure that no blue bars on the scrollbar-thing to the right remain.
 #   Run one more time to be sure that all is still OK.
 #
