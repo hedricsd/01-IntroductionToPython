@@ -38,5 +38,14 @@ for k in range(25) :
     red_turtle.draw_circle(size)
     size = size + 10
 
+green_turtle = rg.SimpleTurtle('circle')
+green_turtle.speed = 1000
+size = 200
+for k in range(20):
+    green_turtle.left(200)
+    green_turtle.pen = rg.Pen('green', 5)
+    green_turtle.draw_square(size)
+    size = size - 9
+
 ######
 window.close_on_mouse_click()
